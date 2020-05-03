@@ -1,9 +1,46 @@
 name: "my-website"
+
 output_dir: "."
+
 navbar:
+
   title: "My Website"
+
+
   left:
     - text: "Home"
+      icon: fa-home
       href: index.html
-    - text: "About"
+      
+    - text: "Aba 1"
+      icon: fa-info
       href: about.html
+      
+    - text: "Aba 2"
+      icon: fa-gear
+      menu:
+        - text: "Tópico 1"
+        - text: "Page A"
+          href: page_a.html
+        - text: "Page B"
+          href: page_b.html
+        - text: "---------"
+        - text: "Tópico 1"
+        - text: "Page C"
+          href: page_c.html
+        - text: "Page D"
+          href: page_d.html
+  
+  right:
+    - text: "Lineu A.C.F"
+      icon: fa-user 
+      href: https://lineu96.github.io/st/
+      
+        
+output:
+  html_document:
+    theme: cosmo
+    highlight: textmate
+    #include:
+    #  after_body: footer.html
+    #css: styles.css
